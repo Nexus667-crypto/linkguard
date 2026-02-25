@@ -1264,7 +1264,7 @@ function decodeQR(src) {
     }
     const code=jsQR(imageData.data,imageData.width,imageData.height);
     if(!code){
-      showQRResult('warn','QR illisible','⚠️','Impossible de décoder ce QR code. Essayez une image plus nette.','','[]);
+      showQRResult('warn','QR illisible','⚠️','Impossible de décoder ce QR code. Essayez une image plus nette.','',',[]);
       return;
     }
     const url=code.data;
