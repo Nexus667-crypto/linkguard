@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LinkGuard — Suite de Sécurité</title>
+
+<!-- ✅ TON CODE ADSENSE - NE PAS MODIFIER -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8819825197445367"
+     crossorigin="anonymous"></script>
+
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -34,7 +39,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ── Grid BG ── */
 body::before {
   content:'';
   position:fixed;inset:0;
@@ -72,9 +76,7 @@ body::before {
   box-shadow: 0 0 16px rgba(0,217,255,0.35);
 }
 
-.nav-links {
-  display: flex; gap: 0.3rem;
-}
+.nav-links { display: flex; gap: 0.3rem; }
 
 .nav-btn {
   background: none; border: none; color: var(--muted2);
@@ -117,10 +119,8 @@ main { position: relative; z-index: 1; }
 
 .hero h1 {
   font-size: clamp(2.2rem,5vw,3.8rem);
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 1rem;
-  letter-spacing: -1px;
+  font-weight: 800; line-height: 1.1;
+  margin-bottom: 1rem; letter-spacing: -1px;
 }
 
 .hero h1 span {
@@ -129,23 +129,28 @@ main { position: relative; z-index: 1; }
   background-clip:text;
 }
 
-.hero p {
-  color: var(--muted2); font-size: 1.05rem; max-width: 520px; margin: 0 auto 2rem;
-  line-height: 1.6;
-}
+.hero p { color: var(--muted2); font-size: 1.05rem; max-width: 520px; margin: 0 auto 2rem; line-height: 1.6; }
 
-.hero-stats {
-  display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap;
-}
-
+.hero-stats { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; }
 .stat { text-align: center; }
 .stat-num { font-size: 1.6rem; font-weight: 800; color: var(--accent); }
 .stat-label { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; }
 
-/* ── TOOL TABS ── */
-.tools-section {
-  max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem 4rem;
+/* ── AD BLOCKS ── */
+.ad-block {
+  max-width: 780px; margin: 0 auto;
+  padding: 0 1.5rem 1.5rem;
+  text-align: center;
 }
+.ad-block ins { display: block; }
+/* Label discret au-dessus */
+.ad-label {
+  font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--muted); margin-bottom: 0.3rem;
+}
+
+/* ── TOOL TABS ── */
+.tools-section { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
 
 .tool-tabs {
   display: flex; gap: 0.4rem; flex-wrap: wrap;
@@ -160,13 +165,9 @@ main { position: relative; z-index: 1; }
   color: var(--muted2); font-family: 'Syne', sans-serif;
   font-size: 0.82rem; font-weight: 600; padding: 0.5rem 1rem;
   border-radius: 8px; cursor: pointer; transition: all 0.2s;
-  position: relative;
 }
 .tab-btn:hover { color: var(--text); border-color: var(--border2); }
-.tab-btn.active {
-  color: var(--accent); background: rgba(0,217,255,0.07);
-  border-color: rgba(0,217,255,0.25);
-}
+.tab-btn.active { color: var(--accent); background: rgba(0,217,255,0.07); border-color: rgba(0,217,255,0.25); }
 .tab-btn .tab-icon { font-size: 1rem; }
 
 .tab-badge {
@@ -182,8 +183,7 @@ main { position: relative; z-index: 1; }
 
 /* ── CARD ── */
 .card {
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: var(--surface); border: 1px solid var(--border);
   border-radius: 16px; padding: 1.8rem;
   margin-bottom: 1rem;
   position: relative; overflow: hidden;
@@ -222,10 +222,7 @@ main { position: relative; z-index: 1; }
 .action-btn:active { transform:translateY(0); }
 .action-btn:disabled { opacity:0.4; cursor:not-allowed; transform:none; }
 
-.error-msg {
-  display:none; color:var(--danger); font-size:0.8rem;
-  margin-top:0.5rem; font-family:'JetBrains Mono',monospace;
-}
+.error-msg { display:none; color:var(--danger); font-size:0.8rem; margin-top:0.5rem; font-family:'JetBrains Mono',monospace; }
 .error-msg.visible { display:block; }
 
 /* ── LOADING ── */
@@ -275,7 +272,6 @@ main { position: relative; z-index: 1; }
 .info   .result-title { color:var(--accent); }
 
 .result-sub { color:var(--muted2);font-size:0.8rem;font-family:'JetBrains Mono',monospace;word-break:break-all; }
-
 .result-desc { color:#8a9eb8;font-size:0.92rem;line-height:1.6;margin-bottom:1.2rem; }
 
 /* ── SCORE BAR ── */
@@ -358,10 +354,7 @@ main { position: relative; z-index: 1; }
   -webkit-appearance:none;width:16px;height:16px;
   background:var(--accent);border-radius:50%;cursor:pointer;
 }
-.len-val {
-  font-family:'JetBrains Mono',monospace;font-size:0.85rem;
-  color:var(--accent);font-weight:600;min-width:2rem;text-align:right;
-}
+.len-val { font-family:'JetBrains Mono',monospace;font-size:0.85rem; color:var(--accent);font-weight:600;min-width:2rem;text-align:right; }
 
 .strength-bar { margin-bottom:1rem; }
 .strength-segments { display:flex;gap:3px;height:4px;border-radius:99px;overflow:hidden; }
@@ -392,9 +385,7 @@ main { position: relative; z-index: 1; }
   transition:border-color 0.2s,background 0.2s;
   background:var(--bg);
 }
-.qr-drop:hover, .qr-drop.drag-over {
-  border-color:var(--accent);background:rgba(0,217,255,0.04);
-}
+.qr-drop:hover, .qr-drop.drag-over { border-color:var(--accent);background:rgba(0,217,255,0.04); }
 .qr-drop-icon { font-size:2.5rem;margin-bottom:0.8rem; }
 .qr-drop p { color:var(--muted2);font-size:0.9rem;line-height:1.5; }
 .qr-drop small { color:var(--muted);font-size:0.75rem; }
@@ -402,20 +393,11 @@ main { position: relative; z-index: 1; }
 
 .qr-preview { display:none;margin-top:1rem; }
 .qr-preview.visible { display:block; }
-.qr-img-wrap {
-  display:flex;justify-content:center;margin-bottom:1rem;
-}
-.qr-img {
-  max-width:200px;border-radius:12px;
-  border:2px solid var(--border2);
-}
+.qr-img-wrap { display:flex;justify-content:center;margin-bottom:1rem; }
+.qr-img { max-width:200px;border-radius:12px;border:2px solid var(--border2); }
 
 /* ── PREMIUM SECTION ── */
-.premium-section {
-  max-width:780px;margin:0 auto;padding:2rem 1.5rem 5rem;
-  animation:fadeUp 0.4s ease both;
-}
-
+.premium-section { max-width:780px;margin:0 auto;padding:2rem 1.5rem 5rem; animation:fadeUp 0.4s ease both; }
 .premium-header { text-align:center;margin-bottom:3rem; }
 .premium-header h2 { font-size:2rem;font-weight:800;margin-bottom:0.6rem; }
 .premium-header h2 span {
@@ -444,8 +426,7 @@ main { position: relative; z-index: 1; }
 
 .plan-badge {
   display:inline-block;padding:0.2rem 0.7rem;border-radius:6px;
-  font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;
-  margin-bottom:1rem;
+  font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1rem;
 }
 .plan-badge.free { background:rgba(0,233,138,0.12);color:var(--safe);border:1px solid rgba(0,233,138,0.2); }
 .plan-badge.pro  { background:rgba(124,58,237,0.15);color:#a855f7;border:1px solid rgba(124,58,237,0.3); }
@@ -461,26 +442,15 @@ main { position: relative; z-index: 1; }
 .plan-desc { color:var(--muted2);font-size:0.82rem;margin-bottom:1.3rem;line-height:1.5; }
 
 .plan-features { list-style:none;margin-bottom:1.5rem; }
-.plan-features li {
-  display:flex;align-items:center;gap:0.6rem;
-  font-size:0.84rem;padding:0.35rem 0;color:#8a9eb8;
-}
+.plan-features li { display:flex;align-items:center;gap:0.6rem; font-size:0.84rem;padding:0.35rem 0;color:#8a9eb8; }
 .plan-features li::before { content:'✓';color:var(--safe);font-weight:700;flex-shrink:0; }
 .plan-features li.locked { color:var(--muted); }
 .plan-features li.locked::before { content:'✗';color:var(--muted); }
 
-.plan-btn {
-  width:100%;padding:0.85rem;border-radius:10px;font-family:'Syne',sans-serif;
-  font-size:0.9rem;font-weight:700;cursor:pointer;transition:all 0.2s;border:none;
-}
-.plan-btn.free-btn {
-  background:rgba(255,255,255,0.06);border:1px solid var(--border2);color:var(--text);
-}
+.plan-btn { width:100%;padding:0.85rem;border-radius:10px;font-family:'Syne',sans-serif; font-size:0.9rem;font-weight:700;cursor:pointer;transition:all 0.2s;border:none; }
+.plan-btn.free-btn { background:rgba(255,255,255,0.06);border:1px solid var(--border2);color:var(--text); }
 .plan-btn.free-btn:hover { background:rgba(255,255,255,0.1); }
-.plan-btn.pro-btn {
-  background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;
-  box-shadow:0 4px 20px rgba(124,58,237,0.35);
-}
+.plan-btn.pro-btn { background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff; box-shadow:0 4px 20px rgba(124,58,237,0.35); }
 .plan-btn.pro-btn:hover { opacity:0.9;transform:translateY(-1px); }
 
 .savings-badge {
@@ -516,9 +486,7 @@ main { position: relative; z-index: 1; }
   background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;
   font-weight:700;font-size:0.85rem;cursor:pointer;transition:all 0.2s;text-align:center;
 }
-.choice-btn:hover, .choice-btn.selected {
-  border-color:rgba(124,58,237,0.5);background:rgba(124,58,237,0.1);color:#a855f7;
-}
+.choice-btn:hover, .choice-btn.selected { border-color:rgba(124,58,237,0.5);background:rgba(124,58,237,0.1);color:#a855f7; }
 .choice-price { font-size:1.1rem;font-weight:800;color:#a855f7; }
 .choice-label { font-size:0.72rem;color:var(--muted2); }
 .modal-input {
@@ -537,18 +505,8 @@ main { position: relative; z-index: 1; }
 .modal-submit:hover { opacity:0.9;transform:translateY(-1px); }
 .modal-note { font-size:0.72rem;color:var(--muted);text-align:center;margin-top:0.8rem;line-height:1.5; }
 
-/* ── SUCCESS MODAL ── */
 .success-icon { font-size:3rem;text-align:center;margin-bottom:1rem; }
 .success-title { font-size:1.4rem;font-weight:800;text-align:center;margin-bottom:0.5rem;color:var(--safe); }
-
-/* ── AD PLACEHOLDER ── */
-.ad-placeholder {
-  background:rgba(255,255,255,0.02);border:1px dashed var(--border);
-  border-radius:12px;padding:1.2rem;text-align:center;
-  color:var(--muted);font-size:0.75rem;letter-spacing:0.05em;
-  margin-bottom:1.5rem;
-}
-.ad-placeholder strong { display:block;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.3rem; }
 
 /* ── ANIMATIONS ── */
 @keyframes fadeDown { from{opacity:0;transform:translateY(-16px)} to{opacity:1;transform:translateY(0)} }
@@ -557,7 +515,6 @@ main { position: relative; z-index: 1; }
 @keyframes slideUp  { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
 @keyframes spin     { to{transform:rotate(360deg)} }
 
-/* ── RESPONSIVE NAV ── */
 @media(max-width:600px){
   .nav-links { display:none; }
   .navbar { gap:1rem; }
@@ -579,10 +536,9 @@ main { position: relative; z-index: 1; }
   <button class="nav-premium-btn" onclick="openModal()">⚡ Passer Premium</button>
 </nav>
 
-<!-- ── MAIN ── -->
 <main>
 
-<!-- HERO -->
+<!-- ── HERO ── -->
 <section class="hero">
   <div class="hero-badge">🛡 Suite de sécurité gratuite</div>
   <h1>Protégez-vous<br>des <span>menaces en ligne</span></h1>
@@ -594,12 +550,20 @@ main { position: relative; z-index: 1; }
   </div>
 </section>
 
-<!-- ── AD BANNER ── -->
-<div style="max-width:780px;margin:0 auto;padding:0 1.5rem 0.5rem;">
-  <div class="ad-placeholder">
-    <strong>Espace publicitaire — Google AdSense</strong>
-    Intégrez votre code AdSense ici pour monétiser ce bloc
-  </div>
+<!-- ════════════════════════════════
+     PUB 1 — BANNIÈRE SOUS LE HERO
+     Emplacement : Horizontal (728x90 ou responsive)
+     → Remplace data-ad-slot par ton vrai slot ID AdSense
+════════════════════════════════ -->
+<div class="ad-block">
+  <div class="ad-label">Publicité</div>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-8819825197445367"
+       data-ad-slot="SLOT_ID_1"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
 <!-- ── TOOLS ── -->
@@ -623,6 +587,20 @@ main { position: relative; z-index: 1; }
       <span class="tab-icon">📷</span> QR Code
       <span class="tab-badge">PRO</span>
     </button>
+  </div>
+
+  <!-- ════════════════════════════════
+       PUB 2 — CARRÉ DANS LES OUTILS
+       Emplacement : Carré (300x250) entre les tabs et les résultats
+       → Remplace data-ad-slot par ton vrai slot ID AdSense
+  ════════════════════════════════ -->
+  <div style="text-align:center;margin-bottom:1.5rem;">
+    <div class="ad-label">Publicité</div>
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:300px;height:250px"
+         data-ad-client="ca-pub-8819825197445367"
+         data-ad-slot="SLOT_ID_2"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
   <!-- ═══ TAB: LINK ═══ -->
@@ -758,7 +736,6 @@ main { position: relative; z-index: 1; }
 
   <!-- ═══ TAB: QR CODE (PRO) ═══ -->
   <div class="tool-panel" id="tab-qr">
-    <!-- Premium gate -->
     <div id="qrGate">
       <div class="card" style="text-align:center;padding:3rem 2rem;">
         <div style="font-size:3rem;margin-bottom:1rem;">📷</div>
@@ -772,7 +749,6 @@ main { position: relative; z-index: 1; }
         </button>
       </div>
     </div>
-    <!-- Actual QR tool (unlocked for demo) -->
     <div id="qrTool" style="display:none;">
       <div class="card">
         <label class="input-label">Scanner / Analyser un QR Code</label>
@@ -807,6 +783,22 @@ main { position: relative; z-index: 1; }
 
 </section>
 
+<!-- ════════════════════════════════
+     PUB 3 — BAS DE PAGE
+     Emplacement : Bannière responsive bas de page
+     → Remplace data-ad-slot par ton vrai slot ID AdSense
+════════════════════════════════ -->
+<div class="ad-block" style="padding-bottom:2rem;">
+  <div class="ad-label">Publicité</div>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-8819825197445367"
+       data-ad-slot="SLOT_ID_3"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
 <!-- ── PREMIUM SECTION ── -->
 <section class="premium-section" id="premium-section" style="display:none;">
   <div class="premium-header">
@@ -814,7 +806,6 @@ main { position: relative; z-index: 1; }
     <p>Commencez gratuitement, passez Premium quand vous voulez.</p>
   </div>
   <div class="pricing-grid">
-    <!-- FREE -->
     <div class="pricing-card">
       <div class="plan-badge free">Gratuit</div>
       <div class="plan-name">Essentiel</div>
@@ -832,13 +823,10 @@ main { position: relative; z-index: 1; }
       </ul>
       <button class="plan-btn free-btn" onclick="showSection('tools',null)">Utiliser gratuitement</button>
     </div>
-    <!-- PREMIUM -->
     <div class="pricing-card featured">
       <div class="plan-badge best">⚡ Recommandé</div>
       <div class="plan-name">Premium</div>
-      <div class="plan-price featured-price">
-        7,99€ <span>/ mois</span>
-      </div>
+      <div class="plan-price featured-price">7,99€ <span>/ mois</span></div>
       <p class="plan-desc">
         Accès complet à tous les outils + sans publicités.
         <br><strong style="color:var(--safe)">Ou 50€/an <span class="savings-badge">−48%</span></strong>
@@ -881,9 +869,7 @@ main { position: relative; z-index: 1; }
       </div>
       <input type="email" class="modal-input" id="modalEmail" placeholder="Votre adresse email">
       <input type="text" class="modal-input" id="modalName" placeholder="Votre nom complet">
-      <button class="modal-submit" onclick="submitPremium()">
-        Continuer vers le paiement →
-      </button>
+      <button class="modal-submit" onclick="submitPremium()">Continuer vers le paiement →</button>
       <p class="modal-note">
         🔒 Paiement sécurisé via PayPal · Annulable à tout moment<br>
         Aucune carte requise pour l'essai gratuit
@@ -906,16 +892,16 @@ main { position: relative; z-index: 1; }
 // NAVIGATION
 // ════════════════════════════════════════
 function showSection(id, btn) {
-  document.getElementById('tools').style.display = id==='tools' ? '' : 'none';
-  document.getElementById('premium-section').style.display = id==='premium-section' ? '' : 'none';
-  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
-  if(btn) btn.classList.add('active');
+  document.getElementById('tools').style.display = id === 'tools' ? '' : 'none';
+  document.getElementById('premium-section').style.display = id === 'premium-section' ? '' : 'none';
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
 }
 
 function switchTab(id, btn) {
-  document.querySelectorAll('.tool-panel').forEach(p=>p.classList.remove('active'));
-  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-  document.getElementById('tab-'+id).classList.add('active');
+  document.querySelectorAll('.tool-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
   btn.classList.add('active');
 }
 
@@ -925,29 +911,27 @@ function switchTab(id, btn) {
 let selectedPlan = 'monthly';
 function openModal() {
   document.getElementById('premiumModal').classList.add('visible');
-  document.getElementById('modalContent').style.display='';
-  document.getElementById('modalSuccess').style.display='none';
+  document.getElementById('modalContent').style.display = '';
+  document.getElementById('modalSuccess').style.display = 'none';
 }
 function closeModal() { document.getElementById('premiumModal').classList.remove('visible'); }
 function selectPlan(plan) {
   selectedPlan = plan;
-  document.getElementById('planMonthly').classList.toggle('selected', plan==='monthly');
-  document.getElementById('planAnnual').classList.toggle('selected', plan==='annual');
+  document.getElementById('planMonthly').classList.toggle('selected', plan === 'monthly');
+  document.getElementById('planAnnual').classList.toggle('selected', plan === 'annual');
 }
 function submitPremium() {
   const email = document.getElementById('modalEmail').value.trim();
   const name  = document.getElementById('modalName').value.trim();
-  if(!email || !name) { alert('Veuillez remplir tous les champs.'); return; }
-  // Redirect to PayPal with the plan info
+  if (!email || !name) { alert('Veuillez remplir tous les champs.'); return; }
   const price = selectedPlan === 'monthly' ? '7.99' : '50.00';
-  const desc  = selectedPlan === 'monthly' ? 'LinkGuard Premium - Mensuel' : 'LinkGuard Premium - Annuel';
-  const paypalUrl = `https://www.paypal.com/paypalme/louistoupin?amount=${price}&currencyCode=EUR`;
+  const paypalUrl = 'https://www.paypal.com/paypalme/louistoupin?amount=' + price + '&currencyCode=EUR';
   window.open(paypalUrl, '_blank');
-  document.getElementById('modalContent').style.display='none';
-  document.getElementById('modalSuccess').style.display='';
+  document.getElementById('modalContent').style.display = 'none';
+  document.getElementById('modalSuccess').style.display = '';
 }
 document.getElementById('premiumModal').addEventListener('click', function(e) {
-  if(e.target === this) closeModal();
+  if (e.target === this) closeModal();
 });
 
 // ════════════════════════════════════════
@@ -972,65 +956,73 @@ async function analyzeLink() {
   const err = document.getElementById('linkError');
   err.classList.remove('visible');
   document.getElementById('linkResult').classList.remove('visible');
-  if(!raw){showErr(err,'Veuillez entrer une URL.');return;}
-  document.getElementById('linkBtn').disabled=true;
-  showLoading('linkLoading',true);
-  await sleep(1400+Math.random()*600);
-  showLoading('linkLoading',false);
+  if (!raw) { showErr(err, 'Veuillez entrer une URL.'); return; }
+  document.getElementById('linkBtn').disabled = true;
+  showLoading('linkLoading', true);
+  await sleep(1400 + Math.random() * 600);
+  showLoading('linkLoading', false);
 
-  let url, score=100, issues=[], checks=[];
-  let norm = raw; if(!/^https?:\/\//i.test(norm)) norm='https://'+norm;
-  try{ url=new URL(norm); }catch{showErr(err,'URL invalide. Format: https://exemple.com'); document.getElementById('linkBtn').disabled=false; return;}
+  let url, score = 100, issues = [], checks = [];
+  let norm = raw;
+  if (!/^https?:\/\//i.test(norm)) norm = 'https://' + norm;
+  try { url = new URL(norm); } catch {
+    showErr(err, 'URL invalide. Format: https://exemple.com');
+    document.getElementById('linkBtn').disabled = false;
+    return;
+  }
 
-  const host=url.hostname.toLowerCase();
-  const tld='.'+host.split('.').slice(-1)[0];
-  const isHTTPS=url.protocol==='https:';
-  const isTrusted=TRUSTED.some(d=>host===d||host.endsWith('.'+d));
-  const isShort=SHORTENERS.some(d=>host===d||host.endsWith('.'+d));
-  const isIP=/^\d{1,3}(\.\d{1,3}){3}$/.test(host);
-  const parts=host.split('.');
-  const kws=PHISHING_KW.filter(k=>host.includes(k));
-  const urlLen=norm.length;
-  const isPuny=host.includes('xn--');
+  const host = url.hostname.toLowerCase();
+  const tld = '.' + host.split('.').slice(-1)[0];
+  const isHTTPS = url.protocol === 'https:';
+  const isTrusted = TRUSTED.some(d => host === d || host.endsWith('.' + d));
+  const isShort = SHORTENERS.some(d => host === d || host.endsWith('.' + d));
+  const isIP = /^\d{1,3}(\.\d{1,3}){3}$/.test(host);
+  const parts = host.split('.');
+  const kws = PHISHING_KW.filter(k => host.includes(k));
+  const urlLen = norm.length;
+  const isPuny = host.includes('xn--');
 
-  if(isHTTPS){checks.push({l:'HTTPS',v:'OUI',s:'ok'});}else{score-=30;issues.push('Le site n\'utilise pas HTTPS.');checks.push({l:'HTTPS',v:'NON',s:'bad'});}
-  if(isTrusted){score+=20;checks.push({l:'Domaine reconnu',v:'FIABLE',s:'ok'});}
-  if(isShort){score-=25;issues.push('Raccourcisseur d\'URL — destination cachée.');checks.push({l:'Raccourcisseur',v:'OUI',s:'bad'});}else{checks.push({l:'Raccourcisseur',v:'NON',s:'ok'});}
-  if(BAD_TLDS.includes(tld)){score-=20;issues.push('Extension suspecte : '+tld);checks.push({l:'Extension',v:tld.toUpperCase(),s:'bad'});}else{checks.push({l:'Extension',v:tld.toUpperCase(),s:SAFE_TLDS.includes(tld)?'ok':'mid'});}
-  if(isIP){score-=35;issues.push('Adresse IP directe détectée.');checks.push({l:'Adresse IP',v:'OUI',s:'bad'});}else{checks.push({l:'Adresse IP',v:'NON',s:'ok'});}
-  if(parts.length>4){score-=20;issues.push('Trop de sous-domaines.');checks.push({l:'Sous-domaines',v:parts.length-2+' EXTRA',s:'bad'});}else{checks.push({l:'Sous-domaines',v:'NORMAL',s:'ok'});}
-  if(kws.length>=2){score-=25;issues.push('Mots suspects : "'+kws.slice(0,3).join('", "'")+'"');checks.push({l:'Mots suspects',v:kws.length+' TROUVÉ(S)',s:'bad'});}
-  else if(kws.length===1){score-=10;checks.push({l:'Mots suspects',v:'1 TROUVÉ',s:'mid'});}
-  else{checks.push({l:'Mots suspects',v:'AUCUN',s:'ok'});}
-  if(urlLen>200){score-=15;issues.push('URL anormalement longue.');checks.push({l:'Longueur',v:urlLen+' CHARS',s:'bad'});}else{checks.push({l:'Longueur',v:urlLen+' CHARS',s:'ok'});}
-  if(isPuny){score-=30;issues.push('Punycode détecté — risque d\'homographe.');checks.push({l:'Homographe',v:'RISQUE',s:'bad'});}else{checks.push({l:'Homographe',v:'NON',s:'ok'});}
-  score=Math.max(0,Math.min(100,score));
+  if (isHTTPS) { checks.push({l:'HTTPS',v:'OUI',s:'ok'}); } else { score -= 30; issues.push("Le site n'utilise pas HTTPS."); checks.push({l:'HTTPS',v:'NON',s:'bad'}); }
+  if (isTrusted) { score += 20; checks.push({l:'Domaine reconnu',v:'FIABLE',s:'ok'}); }
+  if (isShort) { score -= 25; issues.push("Raccourcisseur d'URL — destination cachée."); checks.push({l:'Raccourcisseur',v:'OUI',s:'bad'}); } else { checks.push({l:'Raccourcisseur',v:'NON',s:'ok'}); }
+  if (BAD_TLDS.includes(tld)) { score -= 20; issues.push('Extension suspecte : ' + tld); checks.push({l:'Extension',v:tld.toUpperCase(),s:'bad'}); } else { checks.push({l:'Extension',v:tld.toUpperCase(),s:SAFE_TLDS.includes(tld)?'ok':'mid'}); }
+  if (isIP) { score -= 35; issues.push('Adresse IP directe détectée.'); checks.push({l:'Adresse IP',v:'OUI',s:'bad'}); } else { checks.push({l:'Adresse IP',v:'NON',s:'ok'}); }
+  if (parts.length > 4) { score -= 20; issues.push('Trop de sous-domaines.'); checks.push({l:'Sous-domaines',v:(parts.length-2)+' EXTRA',s:'bad'}); } else { checks.push({l:'Sous-domaines',v:'NORMAL',s:'ok'}); }
+  if (kws.length >= 2) { score -= 25; issues.push('Mots suspects : "' + kws.slice(0,3).join('", "') + '"'); checks.push({l:'Mots suspects',v:kws.length+' TROUVÉ(S)',s:'bad'}); }
+  else if (kws.length === 1) { score -= 10; checks.push({l:'Mots suspects',v:'1 TROUVÉ',s:'mid'}); }
+  else { checks.push({l:'Mots suspects',v:'AUCUN',s:'ok'}); }
+  if (urlLen > 200) { score -= 15; issues.push('URL anormalement longue.'); checks.push({l:'Longueur',v:urlLen+' CHARS',s:'bad'}); } else { checks.push({l:'Longueur',v:urlLen+' CHARS',s:'ok'}); }
+  if (isPuny) { score -= 30; issues.push("Punycode détecté — risque d'homographe."); checks.push({l:'Homographe',v:'RISQUE',s:'bad'}); } else { checks.push({l:'Homographe',v:'NON',s:'ok'}); }
+  score = Math.max(0, Math.min(100, score));
 
-  let level,title,icon,desc;
-  if(isTrusted&&score>=80){level='safe';title='Lien Sûr';icon='✅';desc='Ce lien pointe vers un domaine reconnu et fiable.';}
-  else if(score>=70){level='safe';title='Probablement Sûr';icon='✅';desc='Aucun indicateur majeur détecté. Restez quand même vigilant.';}
-  else if(score>=40){level='warn';title='Suspect — Prudence';icon='⚠️';desc='Plusieurs indicateurs inhabituels. Ne saisissez pas d\'informations personnelles.';}
-  else{level='danger';title='Lien Dangereux !';icon='🚨';desc='Nombreux signes de phishing ou malware. Ne cliquez pas !';}
+  let level, title, icon, desc;
+  if (isTrusted && score >= 80) { level='safe'; title='Lien Sûr'; icon='✅'; desc='Ce lien pointe vers un domaine reconnu et fiable.'; }
+  else if (score >= 70) { level='safe'; title='Probablement Sûr'; icon='✅'; desc='Aucun indicateur majeur détecté. Restez quand même vigilant.'; }
+  else if (score >= 40) { level='warn'; title='Suspect — Prudence'; icon='⚠️'; desc="Plusieurs indicateurs inhabituels. Ne saisissez pas d'informations personnelles."; }
+  else { level='danger'; title='Lien Dangereux !'; icon='🚨'; desc='Nombreux signes de phishing ou malware. Ne cliquez pas !'; }
 
-  const c=document.getElementById('linkResultCard');
-  c.className='result-card '+level;
-  document.getElementById('linkIcon').textContent=icon;
-  document.getElementById('linkTitle').textContent=title;
-  document.getElementById('linkSub').textContent=raw.length>60?raw.slice(0,60)+'…':raw;
-  document.getElementById('linkDesc').textContent=desc;
-  const col=level==='safe'?'var(--safe)':level==='warn'?'var(--warn)':'var(--danger)';
-  const bar=document.getElementById('linkScoreBar');
-  bar.style.background=col; bar.style.width='0%';
-  setTimeout(()=>bar.style.width=score+'%',50);
-  document.getElementById('linkScoreText').textContent=score+'/100';
-  document.getElementById('linkScoreText').style.color=col;
-  document.getElementById('linkChecks').innerHTML=checks.map(ch=>`<div class="check-item"><div class="check-dot ${ch.s}"></div><span class="check-label">${ch.l}</span><span class="check-value ${ch.s}">${ch.v}</span></div>`).join('');
-  const ib=document.getElementById('linkIssues');
-  if(issues.length){ib.style.display='';ib.innerHTML='⚠️ <strong>Points d\'attention :</strong><br>'+issues.map(i=>'• '+i).join('<br>');}else{ib.style.display='none';}
+  const c = document.getElementById('linkResultCard');
+  c.className = 'result-card ' + level;
+  document.getElementById('linkIcon').textContent = icon;
+  document.getElementById('linkTitle').textContent = title;
+  document.getElementById('linkSub').textContent = raw.length > 60 ? raw.slice(0,60) + '…' : raw;
+  document.getElementById('linkDesc').textContent = desc;
+  const col = level==='safe' ? 'var(--safe)' : level==='warn' ? 'var(--warn)' : 'var(--danger)';
+  const bar = document.getElementById('linkScoreBar');
+  bar.style.background = col; bar.style.width = '0%';
+  setTimeout(() => bar.style.width = score + '%', 50);
+  document.getElementById('linkScoreText').textContent = score + '/100';
+  document.getElementById('linkScoreText').style.color = col;
+  document.getElementById('linkChecks').innerHTML = checks.map(ch =>
+    `<div class="check-item"><div class="check-dot ${ch.s}"></div><span class="check-label">${ch.l}</span><span class="check-value ${ch.s}">${ch.v}</span></div>`
+  ).join('');
+  const ib = document.getElementById('linkIssues');
+  if (issues.length) { ib.style.display=''; ib.innerHTML='⚠️ <strong>Points d\'attention :</strong><br>' + issues.map(i => '• ' + i).join('<br>'); }
+  else { ib.style.display='none'; }
   document.getElementById('linkResult').classList.add('visible');
-  document.getElementById('linkBtn').disabled=false;
+  document.getElementById('linkBtn').disabled = false;
 }
-document.getElementById('linkInput').addEventListener('keydown',e=>{if(e.key==='Enter')analyzeLink();});
+document.getElementById('linkInput').addEventListener('keydown', e => { if (e.key === 'Enter') analyzeLink(); });
 
 // ════════════════════════════════════════
 // 2. PASSWORD CHECKER
@@ -1038,129 +1030,131 @@ document.getElementById('linkInput').addEventListener('keydown',e=>{if(e.key==='
 const COMMON_PASSWORDS = ['password','123456','azerty','qwerty','111111','password1','iloveyou','admin','letmein','welcome','monkey','dragon','master','abc123','pass123','12345678'];
 
 function checkPassword() {
-  const p=document.getElementById('passCheckInput').value;
-  const err=document.getElementById('passCheckError');
+  const p = document.getElementById('passCheckInput').value;
+  const err = document.getElementById('passCheckError');
   err.classList.remove('visible');
-  if(!p){showErr(err,'Entrez un mot de passe.');return;}
+  if (!p) { showErr(err, 'Entrez un mot de passe.'); return; }
 
-  let score=0,issues=[],checks=[];
-  const hasUpper=/[A-Z]/.test(p), hasLower=/[a-z]/.test(p);
-  const hasNum=/[0-9]/.test(p), hasSym=/[^A-Za-z0-9]/.test(p);
-  const len=p.length;
-  const isCommon=COMMON_PASSWORDS.includes(p.toLowerCase());
-  const hasRepeat=/(.)\1{2,}/.test(p);
-  const hasSeq=/(abc|bcd|cde|def|efg|123|234|345|456|789|qwe|wer|ert|aze|zer|rty)/i.test(p);
+  let score = 0, issues = [], checks = [];
+  const hasUpper = /[A-Z]/.test(p), hasLower = /[a-z]/.test(p);
+  const hasNum = /[0-9]/.test(p), hasSym = /[^A-Za-z0-9]/.test(p);
+  const len = p.length;
+  const isCommon = COMMON_PASSWORDS.includes(p.toLowerCase());
+  const hasRepeat = /(.)\1{2,}/.test(p);
+  const hasSeq = /(abc|bcd|cde|def|efg|123|234|345|456|789|qwe|wer|ert|aze|zer|rty)/i.test(p);
 
-  if(len>=8){score+=20;checks.push({l:'Longueur',v:len+' CHARS',s:'ok'});}
-  else if(len>=6){score+=10;issues.push('Mot de passe trop court (min. 8 caractères).');checks.push({l:'Longueur',v:len+' CHARS',s:'mid'});}
-  else{issues.push('Mot de passe beaucoup trop court.');checks.push({l:'Longueur',v:len+' CHARS',s:'bad'});}
-  if(len>=12)score+=15; if(len>=16)score+=10;
+  if (len >= 8) { score += 20; checks.push({l:'Longueur',v:len+' CHARS',s:'ok'}); }
+  else if (len >= 6) { score += 10; issues.push('Mot de passe trop court (min. 8 caractères).'); checks.push({l:'Longueur',v:len+' CHARS',s:'mid'}); }
+  else { issues.push('Mot de passe beaucoup trop court.'); checks.push({l:'Longueur',v:len+' CHARS',s:'bad'}); }
+  if (len >= 12) score += 15;
+  if (len >= 16) score += 10;
 
-  if(hasUpper){score+=15;checks.push({l:'Majuscules',v:'OUI',s:'ok'});}else{issues.push('Ajoutez des majuscules.');checks.push({l:'Majuscules',v:'NON',s:'bad'});}
-  if(hasLower){score+=15;checks.push({l:'Minuscules',v:'OUI',s:'ok'});}else{issues.push('Ajoutez des minuscules.');checks.push({l:'Minuscules',v:'NON',s:'bad'});}
-  if(hasNum){score+=15;checks.push({l:'Chiffres',v:'OUI',s:'ok'});}else{issues.push('Ajoutez des chiffres.');checks.push({l:'Chiffres',v:'NON',s:'bad'});}
-  if(hasSym){score+=20;checks.push({l:'Symboles',v:'OUI',s:'ok'});}else{issues.push('Ajoutez des symboles (!@#...).');checks.push({l:'Symboles',v:'NON',s:'bad'});}
-  if(isCommon){score=Math.min(score,15);issues.push('Mot de passe trop commun / dans les listes de fuite !');checks.push({l:'Commun',v:'OUI',s:'bad'});}else{checks.push({l:'Commun',v:'NON',s:'ok'});}
-  if(hasRepeat){score-=10;issues.push('Caractères répétés détectés.');}
-  if(hasSeq){score-=10;issues.push('Séquences facilement devinables.');}
-  score=Math.max(0,Math.min(100,score));
+  if (hasUpper) { score += 15; checks.push({l:'Majuscules',v:'OUI',s:'ok'}); } else { issues.push('Ajoutez des majuscules.'); checks.push({l:'Majuscules',v:'NON',s:'bad'}); }
+  if (hasLower) { score += 15; checks.push({l:'Minuscules',v:'OUI',s:'ok'}); } else { issues.push('Ajoutez des minuscules.'); checks.push({l:'Minuscules',v:'NON',s:'bad'}); }
+  if (hasNum) { score += 15; checks.push({l:'Chiffres',v:'OUI',s:'ok'}); } else { issues.push('Ajoutez des chiffres.'); checks.push({l:'Chiffres',v:'NON',s:'bad'}); }
+  if (hasSym) { score += 20; checks.push({l:'Symboles',v:'OUI',s:'ok'}); } else { issues.push('Ajoutez des symboles (!@#...).'); checks.push({l:'Symboles',v:'NON',s:'bad'}); }
+  if (isCommon) { score = Math.min(score,15); issues.push('Mot de passe trop commun / dans les listes de fuite !'); checks.push({l:'Commun',v:'OUI',s:'bad'}); } else { checks.push({l:'Commun',v:'NON',s:'ok'}); }
+  if (hasRepeat) { score -= 10; issues.push('Caractères répétés détectés.'); }
+  if (hasSeq) { score -= 10; issues.push('Séquences facilement devinables.'); }
+  score = Math.max(0, Math.min(100, score));
 
-  let level,title,icon,desc;
-  if(score>=80){level='safe';title='Mot de passe Fort';icon='💪';desc='Excellent ! Ce mot de passe est difficile à craquer.';}
-  else if(score>=50){level='warn';title='Mot de passe Moyen';icon='⚠️';desc='Acceptable mais améliorable. Suivez les conseils ci-dessous.';}
-  else{level='danger';title='Mot de passe Faible !';icon='🚨';desc='Ce mot de passe est dangereux. Changez-le immédiatement.';}
+  let level, title, icon, desc;
+  if (score >= 80) { level='safe'; title='Mot de passe Fort'; icon='💪'; desc='Excellent ! Ce mot de passe est difficile à craquer.'; }
+  else if (score >= 50) { level='warn'; title='Mot de passe Moyen'; icon='⚠️'; desc='Acceptable mais améliorable. Suivez les conseils ci-dessous.'; }
+  else { level='danger'; title='Mot de passe Faible !'; icon='🚨'; desc='Ce mot de passe est dangereux. Changez-le immédiatement.'; }
 
-  const c=document.getElementById('passCheckCard');
-  c.className='result-card '+level;
-  document.getElementById('passCheckIcon').textContent=icon;
-  document.getElementById('passCheckTitle').textContent=title;
-  document.getElementById('passCheckSub').textContent=len+' caractères · Entropie estimée: ~'+ Math.round(score/100*128)+' bits';
-  document.getElementById('passCheckDesc').textContent=desc;
-  const col=level==='safe'?'var(--safe)':level==='warn'?'var(--warn)':'var(--danger)';
-  const bar=document.getElementById('passCheckBar');
-  bar.style.background=col;bar.style.width='0%';
-  setTimeout(()=>bar.style.width=score+'%',50);
-  document.getElementById('passCheckScore').textContent=score+'/100';
-  document.getElementById('passCheckScore').style.color=col;
-  document.getElementById('passCheckGrid').innerHTML=checks.map(ch=>`<div class="check-item"><div class="check-dot ${ch.s}"></div><span class="check-label">${ch.l}</span><span class="check-value ${ch.s}">${ch.v}</span></div>`).join('');
-  const ib=document.getElementById('passCheckIssues');
-  if(issues.length){ib.style.display='';ib.innerHTML='💡 <strong>Améliorations :</strong><br>'+issues.map(i=>'• '+i).join('<br>');}else{ib.style.display='none';}
+  const c = document.getElementById('passCheckCard');
+  c.className = 'result-card ' + level;
+  document.getElementById('passCheckIcon').textContent = icon;
+  document.getElementById('passCheckTitle').textContent = title;
+  document.getElementById('passCheckSub').textContent = len + ' caractères · Entropie estimée: ~' + Math.round(score/100*128) + ' bits';
+  document.getElementById('passCheckDesc').textContent = desc;
+  const col = level==='safe' ? 'var(--safe)' : level==='warn' ? 'var(--warn)' : 'var(--danger)';
+  const bar = document.getElementById('passCheckBar');
+  bar.style.background = col; bar.style.width = '0%';
+  setTimeout(() => bar.style.width = score + '%', 50);
+  document.getElementById('passCheckScore').textContent = score + '/100';
+  document.getElementById('passCheckScore').style.color = col;
+  document.getElementById('passCheckGrid').innerHTML = checks.map(ch =>
+    `<div class="check-item"><div class="check-dot ${ch.s}"></div><span class="check-label">${ch.l}</span><span class="check-value ${ch.s}">${ch.v}</span></div>`
+  ).join('');
+  const ib = document.getElementById('passCheckIssues');
+  if (issues.length) { ib.style.display=''; ib.innerHTML='💡 <strong>Améliorations :</strong><br>' + issues.map(i => '• ' + i).join('<br>'); }
+  else { ib.style.display='none'; }
   document.getElementById('passCheckResult').classList.add('visible');
 }
-document.getElementById('passCheckInput').addEventListener('keydown',e=>{if(e.key==='Enter')checkPassword();});
+document.getElementById('passCheckInput').addEventListener('keydown', e => { if (e.key === 'Enter') checkPassword(); });
 
 // ════════════════════════════════════════
 // 3. PASSWORD GENERATOR
 // ════════════════════════════════════════
 const CHARS = {
-  upper:'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
-  lower:'abcdefghijklmnopqrstuvwxyz',
-  num:  '0123456789',
-  sym:  '!@#$%^&*()-_=+[]{}|;:,.<>?'
+  upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+  lower: 'abcdefghijklmnopqrstuvwxyz',
+  num:   '0123456789',
+  sym:   '!@#$%^&*()-_=+[]{}|;:,.<>?'
 };
 
-function updateLen() {
-  document.getElementById('lenVal').textContent=document.getElementById('lenSlider').value;
-}
-function toggleOpt(btn){btn.classList.toggle('on');}
+function updateLen() { document.getElementById('lenVal').textContent = document.getElementById('lenSlider').value; }
+function toggleOpt(btn) { btn.classList.toggle('on'); }
 
 function generatePass() {
-  const len=parseInt(document.getElementById('lenSlider').value);
-  const useUpper=document.getElementById('togUpper').classList.contains('on');
-  const useLower=document.getElementById('togLower').classList.contains('on');
-  const useNum  =document.getElementById('togNum').classList.contains('on');
-  const useSym  =document.getElementById('togSym').classList.contains('on');
-  let pool='';
-  if(useUpper)pool+=CHARS.upper;
-  if(useLower)pool+=CHARS.lower;
-  if(useNum)  pool+=CHARS.num;
-  if(useSym)  pool+=CHARS.sym;
-  if(!pool){alert('Sélectionnez au moins un type de caractère.');return;}
-  const arr=new Uint32Array(len);
+  const len = parseInt(document.getElementById('lenSlider').value);
+  const useUpper = document.getElementById('togUpper').classList.contains('on');
+  const useLower = document.getElementById('togLower').classList.contains('on');
+  const useNum   = document.getElementById('togNum').classList.contains('on');
+  const useSym   = document.getElementById('togSym').classList.contains('on');
+  let pool = '';
+  if (useUpper) pool += CHARS.upper;
+  if (useLower) pool += CHARS.lower;
+  if (useNum)   pool += CHARS.num;
+  if (useSym)   pool += CHARS.sym;
+  if (!pool) { alert('Sélectionnez au moins un type de caractère.'); return; }
+  const arr = new Uint32Array(len);
   crypto.getRandomValues(arr);
-  let pass=Array.from(arr).map(v=>pool[v%pool.length]).join('');
-  // Guarantee at least one of each selected type
-  const types=[];
-  if(useUpper)types.push(CHARS.upper);
-  if(useLower)types.push(CHARS.lower);
-  if(useNum)  types.push(CHARS.num);
-  if(useSym)  types.push(CHARS.sym);
-  const arr2=new Uint32Array(types.length);
+  let pass = Array.from(arr).map(v => pool[v % pool.length]).join('');
+  const types = [];
+  if (useUpper) types.push(CHARS.upper);
+  if (useLower) types.push(CHARS.lower);
+  if (useNum)   types.push(CHARS.num);
+  if (useSym)   types.push(CHARS.sym);
+  const arr2 = new Uint32Array(types.length);
   crypto.getRandomValues(arr2);
-  let passArr=pass.split('');
-  types.forEach((t,i)=>{ passArr[i]=t[arr2[i]%t.length]; });
-  passArr.sort(()=>Math.random()-0.5);
-  pass=passArr.join('');
-  document.getElementById('passText').textContent=pass;
-  document.getElementById('copyBtn').textContent='Copier';
+  let passArr = pass.split('');
+  types.forEach((t, i) => { passArr[i] = t[arr2[i] % t.length]; });
+  passArr.sort(() => Math.random() - 0.5);
+  pass = passArr.join('');
+  document.getElementById('passText').textContent = pass;
+  document.getElementById('copyBtn').textContent = 'Copier';
   document.getElementById('copyBtn').classList.remove('copied');
   updateStrength(pass);
 }
 
 function updateStrength(pass) {
-  let s=0;
-  if(pass.length>=8)s++;if(pass.length>=12)s++;if(pass.length>=16)s++;
-  if(/[A-Z]/.test(pass)&&/[a-z]/.test(pass))s++;
-  if(/[0-9]/.test(pass)&&/[^A-Za-z0-9]/.test(pass))s++;
-  const segs=document.querySelectorAll('.strength-seg');
-  const colors=['#ff3e6c','#ff6b35','#ffb800','#7dc900','#00e98a'];
-  const labels=['Très faible','Faible','Moyen','Fort','Très fort'];
-  segs.forEach((seg,i)=>{seg.style.background=i<s?colors[Math.min(s-1,4)]:'var(--border)';});
-  document.getElementById('strengthText').textContent=s>0?labels[Math.min(s-1,4)]:'—';
-  document.getElementById('strengthText').style.color=s>0?colors[Math.min(s-1,4)]:'var(--muted)';
+  let s = 0;
+  if (pass.length >= 8) s++;
+  if (pass.length >= 12) s++;
+  if (pass.length >= 16) s++;
+  if (/[A-Z]/.test(pass) && /[a-z]/.test(pass)) s++;
+  if (/[0-9]/.test(pass) && /[^A-Za-z0-9]/.test(pass)) s++;
+  const segs = document.querySelectorAll('.strength-seg');
+  const colors = ['#ff3e6c','#ff6b35','#ffb800','#7dc900','#00e98a'];
+  const labels = ['Très faible','Faible','Moyen','Fort','Très fort'];
+  segs.forEach((seg, i) => { seg.style.background = i < s ? colors[Math.min(s-1,4)] : 'var(--border)'; });
+  document.getElementById('strengthText').textContent = s > 0 ? labels[Math.min(s-1,4)] : '—';
+  document.getElementById('strengthText').style.color = s > 0 ? colors[Math.min(s-1,4)] : 'var(--muted)';
 }
 
 function copyPass() {
-  const p=document.getElementById('passText').textContent;
-  if(p==='Cliquez sur Générer')return;
-  navigator.clipboard.writeText(p).then(()=>{
-    const btn=document.getElementById('copyBtn');
-    btn.textContent='✓ Copié !';btn.classList.add('copied');
-    setTimeout(()=>{btn.textContent='Copier';btn.classList.remove('copied');},2000);
+  const p = document.getElementById('passText').textContent;
+  if (p === 'Cliquez sur Générer') return;
+  navigator.clipboard.writeText(p).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = '✓ Copié !'; btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copier'; btn.classList.remove('copied'); }, 2000);
   });
 }
 
-// Auto-generate on page load
 generatePass();
 
 // ════════════════════════════════════════
@@ -1170,81 +1164,80 @@ const TEMP_EMAIL_DOMAINS = ['mailinator.com','guerrillamail.com','temp-mail.org'
 const KNOWN_PROVIDERS = ['gmail.com','outlook.com','hotmail.com','yahoo.com','icloud.com','protonmail.com','laposte.net','orange.fr','sfr.fr','free.fr','live.com','msn.com'];
 
 async function analyzeEmail() {
-  const raw=document.getElementById('emailInput').value.trim().toLowerCase();
-  const err=document.getElementById('emailError');
+  const raw = document.getElementById('emailInput').value.trim().toLowerCase();
+  const err = document.getElementById('emailError');
   err.classList.remove('visible');
   document.getElementById('emailResult').classList.remove('visible');
-  if(!raw){showErr(err,'Entrez une adresse email.');return;}
+  if (!raw) { showErr(err, 'Entrez une adresse email.'); return; }
 
-  showLoading('emailLoading',true);
-  await sleep(900+Math.random()*500);
-  showLoading('emailLoading',false);
+  showLoading('emailLoading', true);
+  await sleep(900 + Math.random() * 500);
+  showLoading('emailLoading', false);
 
-  const emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if(!emailRegex.test(raw)){showErr(err,'Format d\'email invalide.');return;}
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(raw)) { showErr(err, "Format d'email invalide."); return; }
 
-  const [local,domain]=raw.split('@');
-  const tld='.'+domain.split('.').slice(-1)[0];
-  const isTemp=TEMP_EMAIL_DOMAINS.includes(domain);
-  const isKnown=KNOWN_PROVIDERS.includes(domain);
-  const hasDots=local.includes('..');
-  const hasSpecial=/[!#$%^&*()=\[\]{}|<>]/.test(local);
-  const isLong=local.length>30||domain.length>40;
-  const hasNumbers=/^\d+$/.test(local);
-  const isDisposable=TEMP_EMAIL_DOMAINS.some(d=>domain.includes(d.split('.')[0]));
+  const [local, domain] = raw.split('@');
+  const tld = '.' + domain.split('.').slice(-1)[0];
+  const isTemp = TEMP_EMAIL_DOMAINS.includes(domain);
+  const isKnown = KNOWN_PROVIDERS.includes(domain);
+  const hasDots = local.includes('..');
+  const hasSpecial = /[!#$%^&*()=\[\]{}|<>]/.test(local);
+  const isLong = local.length > 30 || domain.length > 40;
+  const isDisposable = TEMP_EMAIL_DOMAINS.some(d => domain.includes(d.split('.')[0]));
 
-  let score=100,issues=[],tags=[];
-  if(isTemp||isDisposable){score-=60;issues.push('Email jetable / temporaire détecté.');tags.push({t:'TEMPORAIRE',c:'bad'});}
-  if(isKnown){score+=10;tags.push({t:'Fournisseur connu',c:'ok'});}
-  if(hasDots){score-=15;issues.push('Double point dans l\'adresse locale.');tags.push({t:'FORMAT SUSPECT',c:'bad'});}
-  if(hasSpecial){score-=20;issues.push('Caractères spéciaux inhabituels.');tags.push({t:'CHARS SPÉCIAUX',c:'mid'});}
-  if(isLong){score-=10;issues.push('Adresse anormalement longue.');tags.push({t:'LONG',c:'mid'});}
-  if(BAD_TLDS.includes(tld)){score-=20;issues.push('Extension de domaine suspecte.');tags.push({t:tld.toUpperCase(),c:'bad'});}
-  if(!isKnown&&!isTemp){tags.push({t:'DOMAINE PERSO',c:'mid'});}
-  score=Math.max(0,Math.min(100,score));
+  let score = 100, issues = [], tags = [];
+  if (isTemp || isDisposable) { score -= 60; issues.push('Email jetable / temporaire détecté.'); tags.push({t:'TEMPORAIRE',c:'bad'}); }
+  if (isKnown) { score += 10; tags.push({t:'Fournisseur connu',c:'ok'}); }
+  if (hasDots) { score -= 15; issues.push("Double point dans l'adresse locale."); tags.push({t:'FORMAT SUSPECT',c:'bad'}); }
+  if (hasSpecial) { score -= 20; issues.push('Caractères spéciaux inhabituels.'); tags.push({t:'CHARS SPÉCIAUX',c:'mid'}); }
+  if (isLong) { score -= 10; issues.push('Adresse anormalement longue.'); tags.push({t:'LONG',c:'mid'}); }
+  if (BAD_TLDS.includes(tld)) { score -= 20; issues.push('Extension de domaine suspecte.'); tags.push({t:tld.toUpperCase(),c:'bad'}); }
+  if (!isKnown && !isTemp) { tags.push({t:'DOMAINE PERSO',c:'mid'}); }
+  score = Math.max(0, Math.min(100, score));
 
-  let level,title,icon,desc;
-  if(score>=70){level='safe';title='Email Légitime';icon='✅';desc='Cette adresse semble valide et provient d\'un fournisseur reconnu.';}
-  else if(score>=40){level='warn';title='Email Suspect';icon='⚠️';desc='Certains indicateurs sont inhabituels. Vérifiez l\'expéditeur.';}
-  else{level='danger';title='Email Dangereux !';icon='🚨';desc='Email jetable ou très suspect. Ne cliquez pas sur les liens qu\'il contient !';}
+  let level, title, icon, desc;
+  if (score >= 70) { level='safe'; title='Email Légitime'; icon='✅'; desc="Cette adresse semble valide et provient d'un fournisseur reconnu."; }
+  else if (score >= 40) { level='warn'; title='Email Suspect'; icon='⚠️'; desc="Certains indicateurs sont inhabituels. Vérifiez l'expéditeur."; }
+  else { level='danger'; title='Email Dangereux !'; icon='🚨'; desc="Email jetable ou très suspect. Ne cliquez pas sur les liens qu'il contient !"; }
 
-  const c=document.getElementById('emailResultCard');
-  c.className='result-card '+level;
-  document.getElementById('emailIcon').textContent=icon;
-  document.getElementById('emailTitle').textContent=title;
-  document.getElementById('emailSub').textContent=raw;
-  document.getElementById('emailDesc').textContent=desc;
+  const c = document.getElementById('emailResultCard');
+  c.className = 'result-card ' + level;
+  document.getElementById('emailIcon').textContent = icon;
+  document.getElementById('emailTitle').textContent = title;
+  document.getElementById('emailSub').textContent = raw;
+  document.getElementById('emailDesc').textContent = desc;
 
-  document.getElementById('emailDetail').innerHTML=`
+  document.getElementById('emailDetail').innerHTML = `
     <div class="detail-row"><span class="detail-key">Adresse locale</span><span class="detail-val">${local}</span></div>
     <div class="detail-row"><span class="detail-key">Domaine</span><span class="detail-val">${domain}</span></div>
     <div class="detail-row"><span class="detail-key">Extension</span><span class="detail-val">${tld}</span></div>
-    <div class="detail-row"><span class="detail-key">Fournisseur</span><span class="detail-val">${isKnown?'<span class="tag ok">RECONNU</span>':isTemp?'<span class="tag bad">TEMPORAIRE</span>':'<span class="tag mid">INCONNU</span>'}</span></div>
+    <div class="detail-row"><span class="detail-key">Fournisseur</span><span class="detail-val">${isKnown ? '<span class="tag ok">RECONNU</span>' : isTemp ? '<span class="tag bad">TEMPORAIRE</span>' : '<span class="tag mid">INCONNU</span>'}</span></div>
     <div class="detail-row"><span class="detail-key">Score sécurité</span><span class="detail-val" style="color:${level==='safe'?'var(--safe)':level==='warn'?'var(--warn)':'var(--danger)'};font-weight:700">${score}/100</span></div>
-    <div class="detail-row"><span class="detail-key">Étiquettes</span><span class="detail-val">${tags.map(t=>`<span class="tag ${t.c}">${t.t}</span>`).join('')}</span></div>
+    <div class="detail-row"><span class="detail-key">Étiquettes</span><span class="detail-val">${tags.map(t => `<span class="tag ${t.c}">${t.t}</span>`).join('')}</span></div>
   `;
 
-  const ib=document.getElementById('emailIssues');
-  if(issues.length){ib.style.display='';ib.innerHTML='⚠️ <strong>Points d\'attention :</strong><br>'+issues.map(i=>'• '+i).join('<br>');}else{ib.style.display='none';}
+  const ib = document.getElementById('emailIssues');
+  if (issues.length) { ib.style.display=''; ib.innerHTML="⚠️ <strong>Points d'attention :</strong><br>" + issues.map(i => '• ' + i).join('<br>'); }
+  else { ib.style.display='none'; }
   document.getElementById('emailResult').classList.add('visible');
 }
-document.getElementById('emailInput').addEventListener('keydown',e=>{if(e.key==='Enter')analyzeEmail();});
+document.getElementById('emailInput').addEventListener('keydown', e => { if (e.key === 'Enter') analyzeEmail(); });
 
 // ════════════════════════════════════════
-// 5. QR CODE (uses jsQR lib via CDN)
+// 5. QR CODE — BUG CORRIGÉ ✅
 // ════════════════════════════════════════
-// Load jsQR
-const jsQRScript=document.createElement('script');
-jsQRScript.src='https://cdnjs.cloudflare.com/ajax/libs/jsQR/1.4.0/jsQR.min.js';
+const jsQRScript = document.createElement('script');
+jsQRScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/jsQR/1.4.0/jsQR.min.js';
 document.head.appendChild(jsQRScript);
 
 function handleQR(input) {
-  const file=input.files[0];
-  if(!file)return;
-  const reader=new FileReader();
-  reader.onload=function(e){
-    const img=document.getElementById('qrImg');
-    img.src=e.target.result;
+  const file = input.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const img = document.getElementById('qrImg');
+    img.src = e.target.result;
     document.getElementById('qrPreview').classList.add('visible');
     decodeQR(e.target.result);
   };
@@ -1252,68 +1245,66 @@ function handleQR(input) {
 }
 
 function decodeQR(src) {
-  const imgEl=new Image();
-  imgEl.onload=function(){
-    const canvas=document.createElement('canvas');
-    canvas.width=imgEl.width; canvas.height=imgEl.height;
-    const ctx=canvas.getContext('2d');
-    ctx.drawImage(imgEl,0,0);
-    const imageData=ctx.getImageData(0,0,canvas.width,canvas.height);
-    if(typeof jsQR === 'undefined'){
-      setTimeout(()=>decodeQR(src),500); return;
-    }
-    const code=jsQR(imageData.data,imageData.width,imageData.height);
-    if(!code){
-      showQRResult('warn','QR illisible','⚠️','Impossible de décoder ce QR code. Essayez une image plus nette.','',',[]);
+  const imgEl = new Image();
+  imgEl.onload = function() {
+    const canvas = document.createElement('canvas');
+    canvas.width = imgEl.width; canvas.height = imgEl.height;
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(imgEl, 0, 0);
+    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    if (typeof jsQR === 'undefined') { setTimeout(() => decodeQR(src), 500); return; }
+    const code = jsQR(imageData.data, imageData.width, imageData.height);
+    if (!code) {
+      showQRResult('warn', 'QR illisible', '⚠️', 'Impossible de décoder ce QR code. Essayez une image plus nette.', '', []);
       return;
     }
-    const url=code.data;
-    showQRResult('info','QR Décodé','📷','Contenu extrait. Analyse du lien en cours...', url,[]);
-    // Now analyze the URL
-    setTimeout(()=>{
-      document.getElementById('linkInput').value=url;
-      showSection('tools',document.querySelector('.nav-btn'));
-      switchTab('link',document.querySelector('.tab-btn'));
+    const url = code.data;
+    showQRResult('info', 'QR Décodé', '📷', 'Contenu extrait. Redirection vers l\'analyse du lien...', url, []);
+    setTimeout(() => {
+      document.getElementById('linkInput').value = url;
+      showSection('tools', document.querySelector('.nav-btn'));
+      switchTab('link', document.querySelector('.tab-btn'));
       analyzeLink();
-    },1500);
+    }, 1500);
   };
-  imgEl.src=src;
+  imgEl.src = src;
 }
 
-function showQRResult(level,title,icon,desc,sub,checks){
-  const c=document.getElementById('qrResultCard');
-  c.className='result-card '+level;
-  document.getElementById('qrIcon').textContent=icon;
-  document.getElementById('qrTitle').textContent=title;
-  document.getElementById('qrSub').textContent=sub;
-  document.getElementById('qrDesc').textContent=desc;
-  document.getElementById('qrChecks').innerHTML=checks.map(ch=>`<div class="check-item"><div class="check-dot ${ch.s}"></div><span class="check-label">${ch.l}</span><span class="check-value ${ch.s}">${ch.v}</span></div>`).join('');
+function showQRResult(level, title, icon, desc, sub, checks) {
+  const c = document.getElementById('qrResultCard');
+  c.className = 'result-card ' + level;
+  document.getElementById('qrIcon').textContent = icon;
+  document.getElementById('qrTitle').textContent = title;
+  document.getElementById('qrSub').textContent = sub;
+  document.getElementById('qrDesc').textContent = desc;
+  document.getElementById('qrChecks').innerHTML = checks.map(ch =>
+    `<div class="check-item"><div class="check-dot ${ch.s}"></div><span class="check-label">${ch.l}</span><span class="check-value ${ch.s}">${ch.v}</span></div>`
+  ).join('');
   document.getElementById('qrResult').classList.add('visible');
 }
 
-// QR Drop
-const qrDrop=document.getElementById('qrDrop');
-qrDrop.addEventListener('dragover',e=>{e.preventDefault();qrDrop.classList.add('drag-over');});
-qrDrop.addEventListener('dragleave',()=>qrDrop.classList.remove('drag-over'));
-qrDrop.addEventListener('drop',e=>{
-  e.preventDefault();qrDrop.classList.remove('drag-over');
-  const file=e.dataTransfer.files[0];
-  if(file&&file.type.startsWith('image/')){
-    const dt=new DataTransfer();dt.items.add(file);
-    document.getElementById('qrFileInput').files=dt.files;
-    handleQR({files:[file]});
+const qrDrop = document.getElementById('qrDrop');
+qrDrop.addEventListener('dragover', e => { e.preventDefault(); qrDrop.classList.add('drag-over'); });
+qrDrop.addEventListener('dragleave', () => qrDrop.classList.remove('drag-over'));
+qrDrop.addEventListener('drop', e => {
+  e.preventDefault(); qrDrop.classList.remove('drag-over');
+  const file = e.dataTransfer.files[0];
+  if (file && file.type.startsWith('image/')) {
+    const dt = new DataTransfer(); dt.items.add(file);
+    document.getElementById('qrFileInput').files = dt.files;
+    handleQR({ files: [file] });
   }
 });
 
 // ════════════════════════════════════════
 // HELPERS
 // ════════════════════════════════════════
-function showLoading(id,show){
-  const el=document.getElementById(id);
-  if(show)el.classList.add('visible');else el.classList.remove('visible');
+function showLoading(id, show) {
+  const el = document.getElementById(id);
+  if (show) el.classList.add('visible'); else el.classList.remove('visible');
 }
-function showErr(el,msg){el.textContent='⚠ '+msg;el.classList.add('visible');}
-function sleep(ms){return new Promise(r=>setTimeout(r,ms));}
+function showErr(el, msg) { el.textContent = '⚠ ' + msg; el.classList.add('visible'); }
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 </script>
 </body>
 </html>
